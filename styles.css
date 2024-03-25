@@ -4,8 +4,66 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .container {
   min-height: 100vh;
   overflow: hidden;
   background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-card {
+  width: 327px;
+  height: 501px;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 15px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+
+  .avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .title {
+    color: #ffffff;
+    margin-top: 24px;
+    font-weight: 600;
+  }
+
+  .city {
+    color: #caf74f;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .profession {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 28px;
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
